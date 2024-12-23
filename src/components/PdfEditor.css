@@ -1,0 +1,191 @@
+.pdf-editor {
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.zoom-controls, .rotation-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.editor-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pdf-preview {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: auto;
+}
+
+.pdf-preview .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-preview .react-pdf__Page {
+  max-width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-preview .react-pdf__Page canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.pdf-preview .react-pdf__message {
+  margin: 20px;
+  padding: 20px;
+  color: #666;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.editor-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.text-editor {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.text-editor h3 {
+  margin: 0 0 1rem 0;
+  color: #2d3748;
+}
+
+.text-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.text-controls label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-controls input {
+  width: 60px;
+  padding: 0.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: #2c5282;
+}
+
+button:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.download-button {
+  background: #48bb78;
+  margin-top: auto;
+}
+
+.download-button:hover:not(:disabled) {
+  background: #38a169;
+}
+
+@media (max-width: 1024px) {
+  .editor-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .toolbar {
+    flex-direction: column;
+  }
+  
+  .pdf-preview {
+    min-height: 400px;
+  }
+} 
+
+.error-message {
+  color: #e53e3e;
+  padding: 1rem;
+  background: #fff5f5;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.loading-message {
+  color: #3182ce;
+  padding: 1rem;
+  background: #ebf8ff;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.no-data-message {
+  color: #718096;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem;
+} 
