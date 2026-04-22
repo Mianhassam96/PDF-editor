@@ -1,6 +1,6 @@
 MultiMian PDF Solutions
 
- [Visit now](https://mianhassam96.github.io/PDF-editor/#features).
+ [Visit now](https://mianhassam96.github.io/PDF-editor/#features)
 
 ## Available Scripts
 
