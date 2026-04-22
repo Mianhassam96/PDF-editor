@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PDF-editor/static/css/main.0e0ff215.css",
-    "main.js": "/PDF-editor/static/js/main.a0a2b962.js",
+    "main.js": "/PDF-editor/static/js/main.f736cb7c.js",
     "static/media/pdf.worker.min.js": "/PDF-editor/static/media/pdf.worker.min.b9222b1ed393c8b06f58.js",
     "index.html": "/PDF-editor/index.html",
     "main.0e0ff215.css.map": "/PDF-editor/static/css/main.0e0ff215.css.map",
-    "main.a0a2b962.js.map": "/PDF-editor/static/js/main.a0a2b962.js.map"
+    "main.f736cb7c.js.map": "/PDF-editor/static/js/main.f736cb7c.js.map"
   },
   "entrypoints": [
     "static/css/main.0e0ff215.css",
-    "static/js/main.a0a2b962.js"
+    "static/js/main.f736cb7c.js"
   ]
 }
