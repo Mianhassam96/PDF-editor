@@ -36,7 +36,7 @@ const PdfEditor = () => {
         setPdfContent(pdfBytes);
 
         // Create blob URL for preview
-        const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+        const blob = new Blob([pdfBytes.buffer], { type: 'application/pdf' });
         const fileUrl = URL.createObjectURL(blob);
         setViewPdf(fileUrl);
       } catch (error) {
@@ -88,7 +88,7 @@ const PdfEditor = () => {
 
   const handleDownload = () => {
     if (!pdfContent) return;
-    const blob = new Blob([pdfContent], { type: 'application/pdf' });
+    const blob = new Blob([pdfContent.buffer], { type: 'application/pdf' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
